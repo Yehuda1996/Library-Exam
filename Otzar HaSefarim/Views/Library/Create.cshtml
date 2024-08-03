@@ -1,0 +1,8 @@
+﻿@model Otzar_HaSefarim.ViewModel.LibraryVM;
+
+<form asp-action="Create" method="post">
+	@Html.AntiForgeryToken
+	<label for="fname">AddGenre</label>
+	<input asp-for="Genre" type="text" value="@Model">
+	<button type="submit" value="save">Add Genre</button>
+</form>
